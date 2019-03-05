@@ -1,54 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
     android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="fri.uniza.sk.lifecycle___.MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center"
         android:text="Hello World!"
-        android:id="@+id/textView" />
+        android:textSize="24sp" />
 
     <CheckBox
-        android:text="CheckBox"
+        android:id="@+id/checkBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView"
-        android:layout_alignParentStart="true"
         android:layout_marginTop="13dp"
-        android:id="@+id/checkBox" />
+        android:text="CheckBox" />
 
     <Button
-        android:text="Button"
+        android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/checkBox"
-        android:layout_alignParentStart="true"
-        android:id="@+id/button"
-        android:onClick="btnClick" />
+        android:layout_gravity="center"
+        android:onClick="onClick"
+        android:text="Change text" />
 
     <EditText
-        android:layout_width="wrap_content"
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:text="Name"
         android:ems="10"
-        android:layout_below="@+id/button"
-        android:layout_alignParentStart="true"
-        android:id="@+id/editText" />
+        android:inputType="textPersonName"
+        android:text="Name" />
 
     <Button
-        android:text="Button"
+        android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/editText"
-        android:layout_alignEnd="@+id/checkBox"
-        android:id="@+id/button2" />
-</RelativeLayout>
+        android:layout_gravity="center"
+        android:text="Search" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="btnClick"
+        android:text="Open New Activity" />
+</LinearLayout>
