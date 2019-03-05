@@ -16,7 +16,7 @@ public class Main2Activity extends AppCompatActivity {
 
         findViewById(R.id.button3).setOnClickListener(v -> {
             Intent intent = new Intent();
-            intent.putExtra("resultData", "Result sata from Main2Activity");
+            intent.putExtra("resultData", "Result data from Main2Activity");
             setResult(RESULT_OK, intent);
             finish();
         });
